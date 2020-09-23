@@ -45,41 +45,42 @@ i.e. is31Flavors(originalFlavors) will return TRUE.*/
 
 function is31Flavors(){ 
 
-var originalFlavors = ["Banana Nut Fudge",
-    "Black Walnut",
-    "Burgundy Cherry",
-   "Butterscotch Ribbon",
-    "Cherry Macaron",
-    "Chocolate",
-    "Chocolate Almond",
-    "Chocolate Chip",
-    "Chocolate Fudge",
-    "Chocolate Mint",
-    "Chocolate Ribbon",
-    "Coffee",
-    "Coffee Candy",
-    "Date Nut",
-    "Eggnog",
-    "French Vanilla",
-    "Green Mint Stick",
-    "Lemon Crisp",
-    "Lemon Custard",
-    "Lemon Sherbet",
-    "Maple Nut",
-    "Orange Sherbet",
-    "Peach",
-    "Peppermint Fudge Ribbon",
-    "Peppermint Stick",
-    "Pineapple Sherbet",
-    "Raspberry Sherbet",
-    "Rocky Road",
-    "Strawberry",
-    "Vanilla",
-    "Vanilla Burnt Almond"];
-
-    let check31 = originalFlavors.length === 31;
-
-}
+    var originalFlavors = ["Banana Nut Fudge",
+        "Black Walnut",
+        "Burgundy Cherry",
+       "Butterscotch Ribbon",
+        "Cherry Macaron",
+        "Chocolate",
+        "Chocolate Almond",
+        "Chocolate Chip",
+        "Chocolate Fudge",
+        "Chocolate Mint",
+        "Chocolate Ribbon",
+        "Coffee",
+        "Coffee Candy",
+        "Date Nut",
+        "Eggnog",
+        "French Vanilla",
+        "Green Mint Stick",
+        "Lemon Crisp",
+        "Lemon Custard",
+        "Lemon Sherbet",
+        "Maple Nut",
+        "Orange Sherbet",
+        "Peach",
+        "Peppermint Fudge Ribbon",
+        "Peppermint Stick",
+        "Pineapple Sherbet",
+        "Raspberry Sherbet",
+        "Rocky Road",
+        "Strawberry",
+        "Vanilla",
+        "Vanilla Burnt Almond"];
+    
+    console.log(originalFlavors.length === 31);
+    }
+    
+    is31Flavors();
 
 /* Task 2: Corporate has come to you with an idea for a new flavor: Rainbow Sherbert!
  They think this will be a game changer. You need to modify the array to include this flavor. 
@@ -314,7 +315,11 @@ function copy(){
     copy();
 
 
-/* Task 7: July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. Write a function that checks every item in the array for a given string and returns a new array called filteredArray with just these values. Rather than hardcoding "chocolate" into your function, pass a string as a parameter, and invoke with the argument "chocolate". This way you could also filter for "Vanilla", "Sherbert", etc. when those holidays roll around.
+/* Task 7: July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting 
+all of their chocolate flavors. Write a function that checks every item in the array for a given string and returns a new array 
+called filteredArray with just these values. Rather than hardcoding "chocolate" into your function, pass a string as a parameter, 
+and invoke with the argument "chocolate". This way you could also filter for "Vanilla", "Sherbert", etc. when those holidays roll 
+around.
 
 Your function should accept: 
 
