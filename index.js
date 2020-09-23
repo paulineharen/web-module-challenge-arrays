@@ -115,7 +115,7 @@ function addFlavor(){
         "Eggnog",
         "French Vanilla",
         "Green Mint Stick",
-        "Lemon Crisp",
+        "Lemon Crisp", 
         "Lemon Custard",
         "Lemon Sherbet",
         "Maple Nut",
@@ -130,14 +130,15 @@ function addFlavor(){
         "Vanilla",
         "Vanilla Burnt Almond"]
     
-      originalFlavors.push("Rainbow Sherbet");
+      originalFlavors.unshift("Rainbow Sherbet");
       console.log (originalFlavors);
     }
     
     addFlavor();
 
-
-/* Task 3: Houston, we have a problem! There are now 32 flavors in the array! Your task is to remove an item from the end of the array. 
+<
+/* Task 3: Houston, we have a problem! There are now 32 flavors in the array! 
+Your task is to remove an item from the end of the array. 
 
 Your function should accept:
 
@@ -147,12 +148,45 @@ Your function should remove a flavor from the end of the array and console.log t
 
 For example removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]*/ 
 
-function removeLastFlavor(/*code here*/){
+function removeLastFlavor(){
 
-    /*code here*/
+    let originalFlavors = ["Rainbow Sherbet",
+    "Banana Nut Fudge",
+    "Black Walnut",
+    "Burgundy Cherry",
+   "Butterscotch Ribbon",
+    "Cherry Macaron",
+    "Chocolate",
+    "Chocolate Almond",
+    "Chocolate Chip",
+    "Chocolate Fudge",
+    "Chocolate Mint",
+    "Chocolate Ribbon",
+    "Coffee",
+    "Coffee Candy",
+    "Date Nut",
+    "Eggnog",
+    "French Vanilla",
+    "Green Mint Stick",
+    "Lemon Crisp", 
+    "Lemon Custard",
+    "Lemon Sherbet",
+    "Maple Nut",
+    "Orange Sherbet",
+    "Peach",
+    "Peppermint Fudge Ribbon",
+    "Peppermint Stick",
+    "Pineapple Sherbet",
+    "Raspberry Sherbet",
+    "Rocky Road",
+    "Strawberry",
+    "Vanilla",
+    "Vanilla Burnt Almond"]
 
+    originalFlavors.pop([-1]);
+    console.log (originalFlavors);
 }
-
+    removeLastFlavor();
 /* Task 4: Write a function that returns a flavor at a given index in the array.
 
 Your function should accept:
@@ -160,7 +194,8 @@ Your function should accept:
 (1) an array 
 (2) an index
 
-For example, getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully. */
+For example, getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", 
+assuming Rainbow Sherbert has been added successfully. */
 
 function getFlavorByIndex(/*code here*/){
 
@@ -168,7 +203,8 @@ function getFlavorByIndex(/*code here*/){
 
 }
 
-/* Task 5: As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, as opposed to just arbitrarily removing the first or last flavor. Your task is to get an index by flavor name, and remove that flavor from the array. 
+/* Task 5: As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, 
+as opposed to just arbitrarily removing the first or last flavor. Your task is to get an index by flavor name, and remove that flavor from the array. 
 
 Your function should accept: 
 
@@ -181,11 +217,53 @@ Hint: You can use .splice() for this
 
 */
 
-function removeFlavorByName(/*code here*/){
 
-    /*code here*/
 
-}
+function removeFlavorByName(){
+
+    let originalFLavors = ["Rainbow Sherbet",
+      "Banana Nut Fudge",
+      "Black Walnut",
+      "Burgundy Cherry",
+     "Butterscotch Ribbon",
+      "Cherry Macaron",
+      "Chocolate",
+      "Chocolate Almond",
+      "Chocolate Chip",
+      "Chocolate Fudge",
+      "Chocolate Mint",
+      "Chocolate Ribbon",
+      "Coffee",
+      "Coffee Candy",
+      "Date Nut",
+      "Eggnog",
+      "French Vanilla",
+      "Green Mint Stick",
+      "Lemon Crisp", 
+      "Lemon Custard",
+      "Lemon Sherbet",
+      "Maple Nut",
+      "Orange Sherbet",
+      "Peach",
+      "Peppermint Fudge Ribbon",
+      "Peppermint Stick",
+      "Pineapple Sherbet",
+      "Raspberry Sherbet",
+      "Rocky Road",
+      "Strawberry",
+      "Vanilla"];
+  
+      let index = originalFLavors.indexOf("Vanilla");
+  
+      if (index > -1) {
+      originalFLavors.splice(index, 1);
+  
+      console.log (originalFLavors);
+    }
+  }
+  removeFlavorByName();
+  
+  
 
 
 /* Task 6: With all of these changes going on, we don't want to lose track of the actual, original 31 flavors. Write a function called copy that makes a copy of the array. 
