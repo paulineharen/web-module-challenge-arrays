@@ -367,11 +367,51 @@ DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem.
 
 hint - you can use the .includes method to help you solve this */
 
-function filterByWord(/*code here*/){
+function filterByWord(array, flavor){
 
-    /*code here*/
+    let originalFLavors = ["Rainbow Sherbet",
+    "Banana Nut Fudge",
+    "Black Walnut",
+    "Burgundy Cherry",
+   "Butterscotch Ribbon",
+    "Cherry Macaron",
+    "Chocolate",
+    "Chocolate Almond",
+    "Chocolate Chip",
+    "Chocolate Fudge",
+    "Chocolate Mint",
+    "Chocolate Ribbon",
+    "Coffee",
+    "Coffee Candy",
+    "Date Nut",
+    "Eggnog",
+    "French Vanilla",
+    "Green Mint Stick",
+    "Lemon Crisp", 
+    "Lemon Custard",
+    "Lemon Sherbet",
+    "Maple Nut",
+    "Orange Sherbet",
+    "Peach",
+    "Peppermint Fudge Ribbon",
+    "Peppermint Stick",
+    "Pineapple Sherbet",
+    "Raspberry Sherbet",
+    "Rocky Road",
+    "Strawberry",
+    "Vanilla"];
 
+
+    let newArray = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].includes(flavor)) {
+            newArray.push(arr[i]);
+        }
+    }
+    return newArray;
 }
+
+filterByWord(originalFlavors, "Chocolate")
 
 
 
